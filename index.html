@@ -19,24 +19,53 @@
 	</aside>
 
 	<main>
-		<h2>Description of service</h2>
-		<form class="signup-form">
+		<section class="main-description">
+			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+		</section>
+		<form class="signup-form" id="signup-form">
 			<div class="signup-area">
-				<h2>Header</h2>
-				<label for="fname">FIRST NAME</label>
-				<input type="text" placeholder="Bob" id="fname" name="fname" required>
-				<label for="lname">LAST NAME</label>
-				<input type="text" placeholder="Example"id="lname" name="lname" required>
-				<label for="email">EMAIL</label>
-				<input type="email" placeholder="bob.example@example.com" id="email" name="email" required>
-				<label>PASSWORD</label>
-				<input type="password" id="password" name="password" required>
-				<label>CONFIRM PASSWORD</label>
-				<input type="password" id="confirm-password" name="confirm-password" required>
+				<h2>First, tell us about yourself!</h2>
+				<div class="name signup-section">
+					<div class="label-input">
+						<label for="fname">FIRST NAME</label>
+						<input type="text" placeholder="First" id="fname" name="fname" required>
+					</div>
+					<div class="label-input">
+						<label for="lname">LAST NAME</label>
+					<input type="text" placeholder="Last"id="lname" name="lname" required>
+					</div>
+				</div>
+				<div class="contact signup-section">
+					<div class="label-input">
+						<label for="email">EMAIL</label>
+						<input type="email" placeholder="first.last@example.com" id="email" name="email" required>
+					</div>
+					<div class="label-input">
+						<label for="phone-number">PHONE NUMBER</label>
+						<input type="number" placeholder="###-###-####" name="phone-number" id="phone-number">
+					</div>
+				</div>
+				<div class="password signup-section">
+					<div class="label-input">
+						<label>PASSWORD</label>
+						<input type="password" id="password" name="password" required>
+					</div>
+					<div class="label-input">
+						<label>CONFIRM PASSWORD</label>
+						<input type="password" id="confirm-password" name="confirm-password" required>
+					</div>
+				</div>
 			</div>
-			<input type="submit" name="Create Account">
-			<p>Already have an account? <a href="/">Log in</a></p>
 		</form>
+		<div class="signup-submit">
+			<button type="submit" form="signup-form">Create Account</button>
+			<p>Already have an account? <a href="/">Log in</a></p>
+		</div>
 	</main>
 </body>
 </html>

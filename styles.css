@@ -25,11 +25,15 @@ time, mark, audio, video {
 a:link, a:visited, a:hover, a:active {
 	color: inherit;
 }
+a:hover, a:active {
+	color: aqua;
+	transition: color 0.5s ease-in-out;
+}
 body {
+	display: flex;
 	font-family: Noto Sans, sans-serif;
 	min-height: 100vh;
 	min-width: 100vw;
-	display: flex;
 }
 
 /* ASIDE */
@@ -72,7 +76,72 @@ aside.background-image {
 	padding: 0px 5px;
 }
 
+/* MAIN */
 main {
+	background: rgba(192, 192, 214, 0.1);
 	display: flex;
+	flex-direction: column;
 	flex: 2;
 }
+
+/* MAIN DESCRIPTION */
+section.main-description {
+	align-items: flex-end;
+	display: flex;
+	flex: 1;
+	padding: 30px;
+	max-width: 700px;
+}
+
+/* MAIN SIGNUP */
+form.signup-form {
+	justify-content: center;
+	background: rgba(255, 255, 255, 1.0);
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 10px 30px;
+}
+div.signup-area {
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	gap: 10px;
+	max-height: 250px;
+}
+div.signup-section {
+	display: flex;
+	gap: 50px;
+}
+div.label-input {
+	display: flex;
+	flex-direction: column;
+}
+div.label-input label {
+	color: rgba(70, 70, 70, 1);
+	font-weight: bold;
+	font-size: 0.75em;
+}
+div.label-input input {
+	width: 225px;
+}
+
+/* MAIN SUBMIT */
+div.signup-submit {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	gap: 20px;
+}
+div.signup-submit button {
+	height: auto;
+	width: 200px;
+	background: rgba(44, 53, 76, 1.0);
+	border-radius: 10px;
+	color: white;
+	padding: 10px;
+}
+
