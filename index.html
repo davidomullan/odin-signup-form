@@ -7,6 +7,35 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1>hello, world!</h1>
+	<aside class="background-image">
+		<div class="aside-image">
+			<img src="images/sidebar-image.jpg"> <!-- 3D Render of a cube. :) by Sunder Muthukumaran (https://unsplash.com/photos/fd6K_OFlnRA) -->
+			<p>Cubed</p>
+		</div>
+		<div class="photo-credit">
+			<p>Photo by <a href="https://unsplash.com/photos/NX5UgZXWJxg">Christoph Nolte</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+		</div>
+	</aside>
+
+	<main>
+		<h2>Description of service</h2>
+		<form class="signup-form">
+			<div class="signup-area">
+				<h2>Header</h2>
+				<label for="fname">FIRST NAME</label>
+				<input type="text" placeholder="Bob" id="fname" name="fname" required>
+				<label for="lname">LAST NAME</label>
+				<input type="text" placeholder="Example"id="lname" name="lname" required>
+				<label for="email">EMAIL</label>
+				<input type="email" placeholder="bob.example@example.com" id="email" name="email" required>
+				<label>PASSWORD</label>
+				<input type="password" id="password" name="password" required>
+				<label>CONFIRM PASSWORD</label>
+				<input type="password" id="confirm-password" name="confirm-password" required>
+			</div>
+			<input type="submit" name="Create Account">
+			<p>Already have an account? <a href="/">Log in</a></p>
+		</form>
+	</main>
 </body>
 </html>
