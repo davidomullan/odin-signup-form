@@ -20,3 +20,59 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+/* GENERAL */
+a:link, a:visited, a:hover, a:active {
+	color: inherit;
+}
+body {
+	font-family: Noto Sans, sans-serif;
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+}
+
+/* ASIDE */
+aside.background-image {
+	background: url("images/background-image.jpg") no-repeat fixed center top/cover;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.aside-image {
+	align-items: center;
+	background: rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex: 0 0 200px;
+	justify-content: center;
+	margin: 50% 0 10% 0;
+	padding: 10px;
+	gap: 5px;
+}
+.aside-image img {
+	border-radius: 10px;
+}
+.aside-image p {
+	color: white;
+	font-size: 4em;
+}
+
+.photo-credit {
+	align-items: flex-end;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+}
+.photo-credit p {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	color: white;
+	margin-bottom: 5px;
+	padding: 0px 5px;
+}
+
+main {
+	display: flex;
+	flex: 2;
+}
