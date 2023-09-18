@@ -2,7 +2,7 @@ let password_match = function() {
 	if (document.getElementById('password').value !=
 			document.getElementById('confirm-password').value) {
 		document.getElementById('confirm-password').setCustomValidity('Passwords must match');
-		document.getElementById('confirm-password').style.backgroundColor = 'lightpint';
+		document.getElementById('confirm-password').style.backgroundColor = 'lightpink';
 	}
 	else {
 		document.getElementById('confirm-password').setCustomValidity('');
