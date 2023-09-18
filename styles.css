@@ -35,6 +35,12 @@ body {
 	min-height: 100vh;
 	min-width: 100vw;
 }
+input:user-valid {
+	background: #7FFF00; /* Chartreuse green */
+}
+input:user-invalid {
+	background: lightpink;
+}
 
 /* ASIDE */
 aside.background-image {
